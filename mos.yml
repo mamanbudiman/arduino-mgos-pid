@@ -1,6 +1,6 @@
-author: djzxz
+author: maman
 type: lib
-description: Arduino DS3231 library
+description: Arduino PID library
 version: 1.0
 
 sources:
@@ -10,13 +10,12 @@ filesystem:
 config_schema:
 libs:
   - origin: https://github.com/mongoose-os-libs/arduino-compat
-  - origin: https://github.com/mongoose-os-libs/arduino-wire
-  - origin: https://github.com/mongoose-os-libs/arduino-spi
+
 tags:
   - arduino
   - c
   - js
   - hw
-  - docs:arduino:DS3231 RTC
+  - docs:arduino:PID
  
 skeleton_version: 2017-05-18
