@@ -1,5 +1,5 @@
-#ifndef PID_v1_h
-#define PID_v1_h
+#ifndef PID_h
+#define PID_h
 #define LIBRARY_VERSION	1.2.1
 
 class PID
@@ -44,10 +44,10 @@ class PID
     void SetTunings(double, double,       // * overload for specifying proportional mode
                     double, int);         	  
 
-	void SetControllerDirection(int);	  // * Sets the Direction, or "Action" of the controller. DIRECT
-										  //   means the output will increase when error is positive. REVERSE
-										  //   means the opposite.  it's very unlikely that this will be needed
-										  //   once it is set in the constructor.
+    void SetControllerDirection(int);	  // * Sets the Direction, or "Action" of the controller. DIRECT
+					  //   means the output will increase when error is positive. REVERSE
+        				  //   means the opposite.  it's very unlikely that this will be needed
+					  //   once it is set in the constructor.
     void SetSampleTime(int);              // * sets the frequency, in Milliseconds, with which 
                                           //   the PID calculation is performed.  default is 100
 										  
