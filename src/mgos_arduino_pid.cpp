@@ -42,8 +42,6 @@ void mgos_PID_Initialize(PID *pid) {
   if (pid == nullptr) return;
   pid->Initialize();
 }   
-
-void PID::SetControllerDirection(int Direction)
   
 void mgos_PID_SetControllerDirection(PID *pid, int Direction) {
   if (pid == nullptr) return;
